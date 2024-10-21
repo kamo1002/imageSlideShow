@@ -6,7 +6,7 @@ body{
     border: 1px solid black;
     padding:5%;
     position: absolute;
-    width: 350px;
+    width: 320px;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -64,7 +64,7 @@ h1{
 
 #image-container{
     display: flex;
-    width: 350px;
+    width: 320px;
     height:50vh;
     margin-left: 5px;
 }
