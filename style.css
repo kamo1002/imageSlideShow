@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
+}
+#container{
+    border: 1px solid black;
+    padding:5%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 5px black;
+}
+#header{
+   display: flex;
+  
+  
+}
+#time{
+    position: relative;
+    
+    left: 10%;
+    padding: 2%;
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px rgba(255, 68, 0, 0.541);
+    background-color: hsla(195, 53%, 79%, 0.295);
+}
+h1{
+    position: relative;
+    box-shadow: 0px 0px 2px black;
+    left: 2%;
+    height: 6vh;
+    padding: 2%;
+    border-radius: 15px;
+    animation: headDeco 5s ease-in-out 0s infinite alternate-reverse ;
+}
+#prvBtn{
+    position: absolute;
+    top: 50%;
+    font-size: 1.5em;
+    padding: 2%;
+    font-weight: bolder;
+    background-color: hsla(0, 0%, 100%, 0.623);
+    border-radius: 15px;
+}
+#nextBtn{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    font-size: 1.5em;
+    padding: 2%;
+    font-weight: bolder;
+    background-color: hsla(0, 0%, 100%, 0.623);
+    border-radius: 15px;
+}
+#nextBtn:hover,#prvBtn:hover{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+
+}
+
+#image-container{
+    display: flex;
+    width: 400px;
+    height:50vh;
+}
+img{
+    width:98%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    display: none;
+}
+#img1{display: block;}
+#slideShowBtn{background-color: blue;
+margin-top: 10%;
+color: white;
+width: 100%;
+font-size: 1.2em;
+font-weight: bold;
+border-radius: 15px;
+border: none;
+cursor: pointer;
+text-align: center;
+}
+#slideShowBtn:hover{
+    background-color: hsla(240, 100%, 50%, 0.438);
+}
+
+@keyframes headDeco {
+    
+         0%{background-color:red ; color: white;}
+        20%{background-color:orange ;color: black;}
+        40%{background-color:yellow ; color: white;}
+        60%{background-color:green ;color: black;}
+        80%{background-color: blue;color: white;}
+       100%{background-color:violet ;color: black;}
+
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
