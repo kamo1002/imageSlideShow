@@ -6,10 +6,12 @@ body{
     border: 1px solid black;
     padding:5%;
     position: absolute;
+    width: 350px;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
     box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
 }
 #header{
    display: flex;
@@ -46,7 +48,7 @@ h1{
 }
 #nextBtn{
     position: absolute;
-    right: 5%;
+    right: 8%;
     top: 50%;
     font-size: 1.5em;
     padding: 2%;
@@ -62,8 +64,9 @@ h1{
 
 #image-container{
     display: flex;
-    width: 300px;
+    width: 350px;
     height:50vh;
+    margin-left: 5px;
 }
 img{
     width:98%;
